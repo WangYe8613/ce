@@ -31,9 +31,9 @@ public class httpService {
 
     public void await() {
         ServerSocket serverSocket = null;
-        int port = 8080;
+        int port = 80;
         try {
-            serverSocket = new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
+            serverSocket = new ServerSocket(port, 1, InetAddress.getByName("192.144.188.26"));
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(0);
