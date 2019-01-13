@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="test_web_soon">
+    <output-path>$PROJECT_DIR$/out/artifacts/test_web_soon</output-path>
+    <root id="root">
+      <element id="artifact" artifact-name="CE:war exploded" />
+    </root>
+  </artifact>
+</component>
