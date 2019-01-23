@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CE 编程万事屋（试行版）</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		
+		<!--添加小人功能所需的代码部分 head-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/spig.js"></script>
+		
+		<link rel="stylesheet" href="css/spigPet.css" type="text/css"/>
+		
+		<script type="text/javascript">
+			var isindex = true;
+			var visitor = true;
+		</script>
+		
+		<!-- 为了文字首行缩进添加的代码 -->
+		<style> 
+			.comments p{text-indent:30px} 
+		</style> 
+		
+  </head>
+  <body>
+		<!--添加小人功能所需的代码部分 body-->
+		<div id="spig" class="spig">
+		    <div id="message">正在加载中……</div>
+		    <div id="mumu" class="mumu"></div>
+		</div>
+		
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand d-none d-sm-inline-block">
+                  <div class="brand-text d-none d-lg-inline-block"><span>Coding Everythinghouse</span><strong> 编程万事屋（试行版）</strong></div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>CE</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img src="img/avatar-1.png" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="title">
+              <h1 class="h4">CE Club</h1>
+              <p>西安工程大学</p>
+							<p>第一家编程俱乐部</p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <ul class="list-unstyled">
+                    <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+                    <li><a href="tables.html"> <i class="icon-grid"></i>编程语言 </a></li>
+                    <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>数据结构 </a></li>
+                    <li><a href="forms.html"> <i class="icon-padnote"></i>Linux </a></li>
+                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>必逛网站 </a>
+                      <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="#">牛客网</a></li>
+                        <li><a href="#">CSDN</a></li>
+                        <li><a href="#">B站</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="login.html"> <i class="icon-interface-windows"></i>程序员的淘宝网 </a></li>
+          </ul><span class="heading">Extras</span>
+          <ul class="list-unstyled">
+            <li> <a href="#"> <i class="icon-flask"></i>Demo </a></li>
+            <li> <a href="#"> <i class="icon-screen"></i>Demo </a></li>
+            <li> <a href="#"> <i class="icon-mail"></i>Demo </a></li>
+						<li>
+							<div>
+								<p onmouseover="over()" onmouseout = "out()"><a href="#"> <i class="icon-picture"></i>企鹅群 </a></p>
+								<img src="img/qq-group.png" style="display:none" id="img"/>
+							</div>
+						</li>
+						<!-- <li>
+							<div>
+								<p onmouseover="over()" onmouseout = "out()"><a href="#"> <i class="icon-picture"></i>微信群 </a></p>
+								<img src="img/weixin-group.jpeg" style="display:none" id="img"/>
+							</div>
+						</li> -->
+          </ul>
+        </nav>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">什么是编程万事屋？</h2>
+            </div>
+          </header>
+					<section class="projects no-padding-top">
+					  <div class="container-fluid">
+					    <!-- Project1-->
+					    <div class="project">
+					      <div class="row bg-white has-shadow">
+					        <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
+					          <div class="project-title d-flex align-items-center">
+					            <div class="image has-shadow"><img src="img/project-6.jpeg" alt="..." class="img-fluid"></div>
+					            <div class="text">
+					              <h3 class="h4">聊聊</h3><small>学弟学妹必看</small>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="row bg-white has-shadow">
+					          <div class="comments">
+											<p>
+												在我们刚进入大学的时候，最大的表现就是“迷茫”，不知道该就业还是考研，也不知道学什么，不知道该从哪学，不知道该怎么学，特别希望有一个学长或学姐给我们指点一下，告诉我们为了就业或考研我们该怎么准备？并且我们当初没有人来引导我们学习，给我们指明方向，所以我们就想成立第一个这样真正能帮到学弟学妹的俱乐部-CE编程万事屋。
+											</p>
+										
+											<p>
+												对于计算机专业，无论是考研还是就业，我们的专业知识一定要过关，最基本的包括一门语言、数据结构、计算机网络、操作系统，这些专业知识无论是就业和考研都需要掌握的；虽然学校里面也有开一些相关的专业课，但是对于就业和考研来说是远远不够的；如果仅仅是跟着学校的课程来学，到了大三时候，面对考研和就业又是非常头疼的事情，正是因为经历过相同的烦恼，所以我们才想创办这么一个俱乐部，为学弟学妹们提供一个学习和交流的平台，在学习的同时也为学弟学妹们解答各种疑惑和迷茫，下来简单介绍一下我们这个CE编程万事屋：
+											</p>
+										
+											<p>
+												1. CE编程万事屋是一个俱乐部，欢迎所有对计算机感兴趣的学弟学妹们，不论专业喔；
+											</p>
+										
+											<p>
+												2. CE编程万事屋为大家提供了学习的网站和企鹅交流群，欢迎大家随时在交流群里提问；
+											</p>
+										
+											<p>
+												3. CE编程万事屋的学习网站，上面包含不同语言、数据结构、网络等相关学习视频，都是零基础学习；
+											</p>
+										
+											<p>
+												4. CE编程万事屋的学习网站除了计算机相关的视频，还有我们推荐的书籍、网站、博文可供大家参考学习；
+											</p>
+										
+											<p>
+												5. 对于学习网站上面的内容，大家可自行选择感兴趣的学习，同时也欢迎大家向我们提供有更好的资料。
+											</p>
+										</div>
+					        </div>
+					      </div>
+					    </div>
+							
+							 <!-- Project2-->
+							<div class="project">
+							  <div class="row bg-white has-shadow">
+							    <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
+							      <div class="project-title d-flex align-items-center">
+							        <div class="image has-shadow"><img src="img/project-7.jpeg" alt="..." class="img-fluid"></div>
+							        <div class="text">
+							          <h3 class="h4">迷茫</h3><small>学弟学妹必看</small>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="row bg-white has-shadow">
+							      <div class="comments">
+											<p>待添加</p>
+										</div>
+							    </div>
+							  </div>
+							</div>
+							
+					  </div>
+					</section>
+          
+          <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>明天的自己会比今天更强大！Welcome to 2019. <a target="_blank" href="#"> @编程万事屋 </a></p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <p></p>
+                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+  </body>
+	
+	<script>
+        function over(){
+            img = document.getElementById("img");
+            img.style.display = "block";
+        }
+         
+        function out(){
+            img = document.getElementById("img");
+            img.style.display = "none";
+        }
+  </script>
+
+</html>
